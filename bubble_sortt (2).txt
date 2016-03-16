@@ -9,8 +9,8 @@ def bubbleSort(alist):
                 temp = alist[i]
                 alist[i] = alist[i+1]
                 alist[i+1] = temp
-    print ("karsilastirma sayısı  :",karsilastirma)
-    print ("yerdegistirme sayısı  :",yerdegistirme)
+    print ("karsilastirma sayÃ½sÃ½  :",karsilastirma)
+    print ("yerdegistirme sayÃ½sÃ½  :",yerdegistirme)
     
 def createAnArray(size):
     import random
@@ -22,9 +22,7 @@ size=int(input("boyut giriniz"))
 alist=createAnArray(size)
 import time
 t_start=time.time()
-
-insertionSort(alist)
-#bubbleSort(alist)
+bubbleSort(alist)
 t_end=time.time()
 for i in range(0,len(alist)):
     print (i,".item",alist[i])
